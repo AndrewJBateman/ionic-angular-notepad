@@ -29,11 +29,11 @@ Ionic 4 app to Create, Read, Update and Delete notes. Notes are stored and retri
 
 ## Technologies
 
-* [Ionic framework v4](https://ionicframework.com/docs).
+* [Ionic framework v4.12.0](https://ionicframework.com/docs).
 
 * [Ionic CLI v7.3.1](https://ionicframework.com/docs).
 
-* [Angular 7.2.2](https://angular.io/).
+* [Angular 7.2.14](https://angular.io/).
 
 * [Ionic Storage v2.2.0](https://www.npmjs.com/package/@ionic/storage), a simple key-value module with SQLite.
 
@@ -43,9 +43,25 @@ Ionic 4 app to Create, Read, Update and Delete notes. Notes are stored and retri
 
 * Run app using `ionic serve` then navigate to `http://localhost:8100/`.
 
+## Depencies Issues
+
+**For dependency error:** '_ERROR in The Angular Compiler requires TypeScript >=3.1.1 and <3.2.0 but 3.2.1 was found instead_':
+**Solution:** [npm i typescript@3.1.6 --save-dev --save-exact](https://stackoverflow.com/questions/53578372/error-in-the-angular-compiler-requires-typescript-3-1-1-and-3-2-0-but-3-2-1-w).
+
+**For dependency error:** '_Module not found: Error: Can't resolve 'core-js/es7/reflect'_':
+**Solution:** Add this to the `tsconfig.json` file:
+
+```json
+"paths": {
+  "core-js/es7/reflect": ["node_modules/core-js/proposals/reflect-metadata"],
+  "core-js/es6/*": ["node_modules/core-js/es/*"]
+}
+
+```
+
 ## Code Examples
 
-* _Detail page showing the Ionic comoponents_
+* _Detail page showing the Ionic components_
 
 ```html
 <ion-header>
