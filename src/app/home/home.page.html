@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="tertiary">
+  <ion-toolbar color="`primary">
     <ion-title>
       Notes
     </ion-title>
@@ -15,9 +15,9 @@
 
   <ion-list >
     <ion-item 
-      color="tertiary" 
-      *ngFor="let note of notesService.notes" 
-      [href]="'/notes/' + note.id" 
+      color="primary" 
+      *ngFor="let note of (notesService.notes | async)" 
+      [routerLink]="'/notes/' + note.id" 
       routerDirection="forward">
       <ion-label>{{ note.title }}</ion-label>
     </ion-item>
