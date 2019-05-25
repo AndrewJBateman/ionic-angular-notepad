@@ -7,28 +7,22 @@ import {
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
 
-import * as fromNote from './note.reducer';
+import * as fromData from './data.reducer';
 
 export interface AppState {
-	notes: fromNote.NoteState;
+	data: fromData.DataState;
 }
 
 export const reducers: ActionReducerMap<AppState> = {
-	notes: fromNote.reducer
+	data: fromData.reducer
 };
 
 export const metaReducers: MetaReducer<AppState>[] = !environment.production
 ? []
 : [];
 
-export const getNoteState = (state: AppState) => state.notes;
-
-export const getAllNotes = createSelector(
-	getNoteState,
-	fromNote.getNotes
-);
-
-export const getNoteById = createSelector(
-	getNoteState,
-	fromNote.getNoteById
+export const getDataState = (state: AppState) => state.data;
+export const getAllItems = createSelector(
+	getDataState,
+	fromData.getItems
 );

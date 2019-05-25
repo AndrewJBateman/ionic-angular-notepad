@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, NavController } from '@ionic/angular';
 import { NotesService } from '../services/notes.service';
+import { DataService } from '../services/data.service';
 
 @Component({
 	selector: 'app-home',
@@ -9,13 +10,19 @@ import { NotesService } from '../services/notes.service';
 })
 export class HomePage implements OnInit {
 
-	constructor(public notesService: NotesService, private alertCtrl: AlertController, private navCtrl: NavController) {
+	constructor(
+		public notesService: NotesService,
+		private alertCtrl: AlertController,
+		private navCtrl: NavController,
+		private dataService: DataService) {
 
 	}
 
 	// load data from storage as soon as app is started.
 	ngOnInit() {
-		// this.notesService.load();
+		this.dataService.getData().subscribe(data => {
+			console.log(data);
+		});
 	}
 
 	// add note method to add a new note

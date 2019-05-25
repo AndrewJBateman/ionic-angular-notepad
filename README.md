@@ -41,11 +41,15 @@ Part 2: NgRX added for state management.
 
 * [rxjs v6.5.1](https://rxjs-dev.firebaseapp.com/)
 
+* [ngrx/effects v7.4.0](https://ngrx.io/guide/effects) use streams to provide new sources of actions to reduce state based on external interactions such as network requests, web socket messages and time-based events.
+
 ## Setup
 
 * Install dependencies with npm install.
 
 * Run app using `ionic serve` then navigate to `http://localhost:8100/`.
+
+* The colour scheme can be changed by updating the ./theme/variables.scss file. Use the [Ionic Colour Generator](https://ionicframework.com/docs/theming/color-gencrator).
 
 ## Dependency Issues
 
@@ -107,6 +111,7 @@ property of the note with any change in the <ion-textarea> value -->
 8. Data Input
 9. Data Storage
 10. Styling
+11. NgRX observables
 
 * This app allows the user to:
 
@@ -135,6 +140,8 @@ property of the note with any change in the <ion-textarea> value -->
 * [JOSH MORONY's Ionic Tutorial part 1: Building a Notepad Application from Scratch with Ionic](https://www.joshmorony.com/building-a-notepad-application-from-scratch-with-ionic/).
 
 * [JOSH MORONY's Ionic Tutorial part 2: Using NgRx for State Management in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-for-state-management-in-an-ionic-angular-application/)
+
+* [JOSH MORONY's Ionic Tutorial part 3: Using NgRx Effects for Data Loading in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-effects-for-data-loading-in-an-ionic-angular-application/)
 
 ## Contact
 
