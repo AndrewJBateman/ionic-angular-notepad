@@ -1,12 +1,11 @@
-# Ionic Angular Notepad
+# :zap: Ionic Angular Notepad
 
-Ionic 4 app to Create, Read, Update and Delete notes. Notes are stored and retrieved using the Ionic Storage component.
-
-Part 2: NgRX added for state management.
+* Ionic 4 app to Create, Read, Update and Delete notes. Notes are stored and retrieved using the Ionic Storage component.
+* Part 2: NgRX added for state management.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -17,41 +16,34 @@ Part 2: NgRX added for state management.
 * [Inspiration](#inspiration)
 * [Contact](#contact)
 
-## General info
+## :books: General info
 
 * This app only has 2 pages:
 
 1. **Home** page with a list of note titles
 2. **Detail** page with a text area so note details can be added and changed. The entire note can also be deleted from this page.
 
-## Screenshots
+## :camera: Screenshots
 
 ![Example screenshot](./img/notes-page.png)
 ![Example screenshot](./img/note-text.png)
 
-## Technologies
+## :signal_strength: Technologies
 
 * [Ionic framework v4.12.0](https://ionicframework.com/docs).
-
 * [Ionic CLI v7.3.9](https://ionicframework.com/docs).
-
 * [Angular 7.2.15](https://angular.io/).
-
 * [Ionic Storage v2.2.0](https://www.npmjs.com/package/@ionic/storage), a simple key-value module with SQLite.
-
 * [rxjs v6.5.1](https://rxjs-dev.firebaseapp.com/)
-
 * [ngrx/effects v7.4.0](https://ngrx.io/guide/effects) use streams to provide new sources of actions to reduce state based on external interactions such as network requests, web socket messages and time-based events.
 
-## Setup
+## :floppy_disk: Setup
 
 * Install dependencies with npm install.
-
 * Run app using `ionic serve` then navigate to `http://localhost:8100/`.
-
 * The colour scheme can be changed by updating the ./theme/variables.scss file. Use the [Ionic Colour Generator](https://ionicframework.com/docs/theming/color-gencrator).
 
-## Dependency Issues
+## :computer: Dependency Issues
 
 **For dependency error:** '_ERROR in The Angular Compiler requires TypeScript >=3.1.1 and <3.2.0 but 3.2.1 was found instead_':
 **Solution:** [npm i typescript@3.1.6 --save-dev --save-exact](https://stackoverflow.com/questions/53578372/error-in-the-angular-compiler-requires-typescript-3-1-1-and-3-2-0-but-3-2-1-w).
@@ -67,7 +59,7 @@ Part 2: NgRX added for state management.
 
 ```
 
-## Code Examples
+## :computer: Code Examples
 
 * _Detail page showing the Ionic components_
 
@@ -97,7 +89,7 @@ property of the note with any change in the <ion-textarea> value -->
 </ion-content>
 ```
 
-## Features
+## :cool: Features
 
 * A simple notepad application that uses many Ionic/Angular/Typescript core concepts such as:
 
@@ -129,20 +121,17 @@ property of the note with any change in the <ion-textarea> value -->
 5. danger
 6. dark
 
-## Status & To-Do List
+## :clipboard: Status & To-Do List
 
 * Status: fully working basic app with all CRUD functions available. If you refresh the browser the notes are still there.
-
 * To-Do: add delete function to Home page. Add a createdAt date. Consider a theme change button to change colors.
 
-## Inspiration
+## :clap: Inspiration
 
 * [JOSH MORONY's Ionic Tutorial part 1: Building a Notepad Application from Scratch with Ionic](https://www.joshmorony.com/building-a-notepad-application-from-scratch-with-ionic/).
-
 * [JOSH MORONY's Ionic Tutorial part 2: Using NgRx for State Management in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-for-state-management-in-an-ionic-angular-application/)
-
 * [JOSH MORONY's Ionic Tutorial part 3: Using NgRx Effects for Data Loading in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-effects-for-data-loading-in-an-ionic-angular-application/)
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
