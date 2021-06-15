@@ -2,8 +2,12 @@
 
 * Ionic 4 app to Create, Read, Update and Delete notes. Notes are stored and retrieved using the Ionic Storage component.
 * Part 2: NgRX added for state management.
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-notepad?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-notepad?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-notepad?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-notepad?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -30,12 +34,12 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic framework v4.12.0](https://ionicframework.com/docs).
-* [Ionic CLI v7.3.9](https://ionicframework.com/docs).
-* [Angular 7.2.15](https://angular.io/).
-* [Ionic Storage v2.2.0](https://www.npmjs.com/package/@ionic/storage), a simple key-value module with SQLite.
-* [rxjs v6.5.1](https://rxjs-dev.firebaseapp.com/)
-* [ngrx/effects v7.4.0](https://ngrx.io/guide/effects) use streams to provide new sources of actions to reduce state based on external interactions such as network requests, web socket messages and time-based events.
+* [Ionic framework v4](https://ionicframework.com/docs).
+* [Ionic CLI v7](https://ionicframework.com/docs).
+* [Angular 7](https://angular.io/).
+* [Ionic Storage v2](https://www.npmjs.com/package/@ionic/storage), a simple key-value module with SQLite.
+* [rxjs v6](https://rxjs-dev.firebaseapp.com/)
+* [ngrx/effects v7](https://ngrx.io/guide/effects) use streams to provide new sources of actions to reduce state based on external interactions such as network requests, web socket messages and time-based events.
 
 ## :floppy_disk: Setup
 
@@ -123,7 +127,7 @@ property of the note with any change in the <ion-textarea> value -->
 
 ## :clipboard: Status & To-Do List
 
-* Status: fully working basic app with all CRUD functions available. If you refresh the browser the notes are still there.
+* Status: Working
 * To-Do: add delete function to Home page. Add a createdAt date. Consider a theme change button to change colors.
 
 ## :clap: Inspiration
@@ -132,6 +136,10 @@ property of the note with any change in the <ion-textarea> value -->
 * [JOSH MORONY's Ionic Tutorial part 2: Using NgRx for State Management in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-for-state-management-in-an-ionic-angular-application/)
 * [JOSH MORONY's Ionic Tutorial part 3: Using NgRx Effects for Data Loading in an Ionic & Angular Application](https://www.joshmorony.com/using-ngrx-effects-for-data-loading-in-an-ionic-angular-application/)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
